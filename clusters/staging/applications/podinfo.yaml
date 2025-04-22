@@ -6,7 +6,7 @@ metadata:
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: bka-podinfo
+  name: podinfo
   namespace: bka-podinfo
 spec:
   url: https://stefanprodan.github.io/podinfo
