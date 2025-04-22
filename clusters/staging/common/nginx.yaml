@@ -1,23 +1,22 @@
----
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: bka-nginx-ingress
+  name: nginx-ingress
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: nginx
-  namespace: bka-nginx-ingress
+  namespace: nginx-ingress
 spec:
   url: https://helm.nginx.com/stable
-  interval: 5m
+  interval: 10m
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: nginx-ingress
-  namespace: bka-nginx-ingress
+  namespace: nginx-ingress
 spec:
   interval: 5m
   chart:
@@ -27,7 +26,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: nginx
-        namespace: bka-nginx-ingress
+        namespace: nginx-ingress
   values:
     controller:
       name: controller
