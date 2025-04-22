@@ -37,3 +37,7 @@ spec:
           paths:
             - path: /
               pathType: Prefix
+      tls:
+        - hosts:
+            - clusterpodinfo.dudenas.work
+          secretName: podinfo-tls
