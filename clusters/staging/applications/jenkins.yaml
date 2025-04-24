@@ -29,16 +29,17 @@ spec:
         namespace: bka-jenkins
   values:
     controller:
-    ingress:
-      enabled: true
-      adminPassword: admin
-      serviceType: LoadBalancer
-      className: "nginx"
-      hosts:
-        - host: jenkins.dudenas.work
-          paths:
-            - path: /
-              pathType: Prefix
+      testEnabled: false
+      ingress:
+        enabled: true
+        adminPassword: admin
+        serviceType: LoadBalancer
+        className: "nginx"
+        hosts:
+          - host: jenkins.dudenas.work
+            paths:
+              - path: /
+                pathType: Prefix
       #tls:
       #  - hosts:
       #      - clusterpodinfo.dudenas.work
