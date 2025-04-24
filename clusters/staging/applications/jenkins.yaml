@@ -30,10 +30,10 @@ spec:
   values:
     controller:
       testEnabled: false
+      serviceType: LoadBalancer
+      adminPassword: admin
       ingress:
         enabled: true
-        adminPassword: admin
-        serviceType: LoadBalancer
         className: "nginx"
         hosts:
           - host: jenkins.dudenas.work
