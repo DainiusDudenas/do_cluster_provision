@@ -27,11 +27,12 @@ spec:
         kind: HelmRepository
         name: jenkins
         namespace: bka-jenkins
-  values:
-    replicaCount: 1
-    adminPassword: admin
+
+values:
+  controller:
     ingress:
       enabled: true
+      adminPassword: admin
       className: "nginx"
       hosts:
         - host: jenkins.dudenas.work
