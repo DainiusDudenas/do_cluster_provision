@@ -32,14 +32,14 @@ spec:
       testEnabled: false
       serviceType: LoadBalancer
       adminPassword: admin
-      ingress:
-        enabled: true
-        className: "nginx"
-        hosts:
-          - host: jenkins.dudenas.work
-            paths:
-              - path: /
-                pathType: Prefix
+    ingress:
+      enabled: true
+      className: "nginx"
+      hosts:
+        - host: jenkins.dudenas.work
+          paths:
+            - path: /
+              pathType: Prefix
       #tls:
       #  - hosts:
       #      - clusterpodinfo.dudenas.work
