@@ -32,6 +32,7 @@ spec:
     ingress:
       enabled: true
       adminPassword: admin
+      serviceType: LoadBalancer
       className: "nginx"
       hosts:
         - host: jenkins.dudenas.work
