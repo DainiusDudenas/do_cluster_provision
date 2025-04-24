@@ -37,11 +37,11 @@ spec:
         enabled: true
         ingressClassName: "nginx"
         hostName: "jenkins.dudenas.work"
-        hosts:
-          - host: jenkins.dudenas.work
-            paths:
-              - path: /
-                pathType: Prefix
+        #hosts:
+        #  - host: jenkins.dudenas.work
+        #    paths:
+        #      - path: /
+        #        pathType: Prefix
       #tls:
       #  - hosts:
       #      - clusterpodinfo.dudenas.work
