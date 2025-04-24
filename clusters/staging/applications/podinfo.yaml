@@ -33,7 +33,7 @@ spec:
       enabled: true
       className: "nginx"
       hosts:
-        - host: clusterpodinfo.dudenas.work
+        - host: pod.dudenas.work
           paths:
             - path: /
               pathType: Prefix
