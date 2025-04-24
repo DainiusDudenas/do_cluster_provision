@@ -31,7 +31,8 @@ spec:
     controller:
       testEnabled: false
       serviceType: LoadBalancer
-      adminPassword: admin
+      admin:
+        password: admin
     ingress:
       enabled: true
       className: "nginx"
